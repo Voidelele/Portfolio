@@ -1,0 +1,410 @@
+<!DOCTYPE html>
+<html lang="de">
+    
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.2/css/all.min.css">
+    <link rel="stylesheet" href="style.css">
+    <title>Portfolio Website</title>
+</head>
+<body>
+    <header>
+        <a href="#" class="logo">Allen</a>
+
+        <nav>
+            <a href="#home" class="active">Home</a>
+            <a href="#about" >Über Mich</a>
+            <a href="#skills" >Skills</a>
+            <a href="#projekte" >Projekte</a>
+            <a href="#kontakt" >Kontakt</a>
+        </nav>
+    </header>
+    <section class="home" id="home">
+        <div class="home-img">
+            <img src="hero.jpg" alt="">
+        </div>
+        <div class="home-content">
+            <h1>Hi, Ich bin <span>Allen</span></h1>
+            <h3 class="typing-text">Ich bin <span></span></h3>
+            <p>*Noch nicht ganz, aber auf dem Weg dorthin.</p>
+            <div class="social-icons">
+                <a href="#"><i class="fa-brands fa-linkedin"></i></a>
+                <a href="#"><i class="fa-brands fa-github"></i></a>
+<!--                 <a href="#"><i class="fa-brands fa-x-twitter"></i></a>
+                <a href="#"><i class="fa-brands fa-instagram"></i></a> -->
+            </div>
+            <a href="#" class="btn">Let's Work Together!</a>
+        </div>
+    </section>
+
+    <!-- ==================== Über Mich Section ==================== -->
+    <section class="about" id="about">
+        <h2 class="heading">Über <span>Mich</span></h2>
+        
+        <div class="about-container">
+            <div class="about-img">
+                <img src="hero.jpg" alt="Über mich">
+                <span class="circle-spin"></span>
+            </div>
+            
+            <div class="about-content">
+                <h3>Anwendungsentwickler in Ausbildung</h3>
+                <p>
+                    Hallo! Ich bin Allen und befinde mich aktuell in der Umschulung zum Fachinformatiker 
+                    für Anwendungsentwicklung. Mein Fokus liegt in der Entwicklung von modernen 
+                    Webanwendungen und der Lösung komplexer Probleme durch Code.
+                </p>
+                <p>
+                    Mit einem Fokus auf Frontend-Technologien wie HTML, CSS und JavaScript sowie 
+                    Backend-Kenntnissen in Python entwickle ich gerne kreative und funktionale Lösungen. 
+                    Ich bin motiviert, ständig Neues zu lernen und meine Fähigkeiten weiterzuentwickeln.
+                </p>
+                
+                <div class="about-info">
+                    <div class="info-box">
+                        <i class="fa-solid fa-graduation-cap"></i>
+                        <h4>Ausbildung</h4>
+                        <p>Fachinformatiker Anwendungsentwicklung</p>
+                    </div>
+                    <div class="info-box">
+                        <i class="fa-solid fa-code"></i>
+                        <h4>Spezialisierung</h4>
+                        <p>Backend Programmierung</p>
+                    </div>
+                    <div class="info-box">
+                        <i class="fa-solid fa-language"></i>
+                        <h4>Sprachen</h4>
+                        <p>Deutsch, Englisch</p>
+                    </div>
+                </div>
+                
+                <a href="#kontakt" class="btn">Kontaktiere mich</a>
+            </div>
+        </div>
+    </section>
+
+        <!-- Skills Section -->
+    <section class="skills" id="skills">
+        <h2 class="heading">Meine <span>Skills</span></h2>
+        <div class="skill-card" data-percentage="60">
+            <div class="card-inner">
+                <div class="card-front">
+                    <i class="fa-brands fa-html15"></i>
+                    <h3>HTML</h3>
+                    <p>Strukturierung von Webseiten</p>
+                </div>
+                <div class="card-back">
+                    <div class="percentage-circle" style="--percentage: 60">
+                        <svg width="120" height="120">
+                            <circle class="circle-bg" cx="50" cy="50" r="45"></circle>
+                            <circle class="circle-progress" cx="50" cy="50" r="45"></circle>
+                        </svg>
+                        <div class="percentage-text">60%</div>
+                    </div>
+                    <h3>HTML</h3>
+                </div>
+            </div>
+        </div>
+            <div class="skill-card" data-percentage="60">
+                <div class="card-inner">
+                    <div class="card-front">
+                        <i class="fa-brands fa-css3-alt"></i>
+                        <h3>CSS</h3>
+                        <p>Styling & Design</p>
+                    </div>
+                    <div class="card-back">
+                        <div class="percentage-circle" style="--percentage: 60">
+                            <svg width="120" height="120">
+                                <circle class="circle-bg" cx="50" cy="50" r="45"></circle>
+                                <circle class="circle-progress" cx="50" cy="50" r="45"></circle>
+                            </svg>
+                            <div class="percentage-text">60%</div>
+                        </div>
+                        <h3>CSS</h3>
+                    </div>
+                </div>
+            </div>
+        <div class="skill-card" data-percentage="30">
+            <div class="card-inner">
+                <div class="card-front">
+                    <i class="fa-brands fa-js"></i>
+                    <h3>JavaScript</h3>
+                    <p>Interaktive Webseiten</p>
+                </div>
+                <div class="card-back">
+                    <div class="percentage-circle" style="--percentage:300">
+                        <svg width="120" height="120">
+                            <circle class="circle-bg" cx="50" cy="50" r="45"></circle>
+                            <circle class="circle-progress" cx="50" cy="50" r="45"></circle>
+                        </svg>
+                        <div class="percentage-text">30%</div>
+                    </div>
+                    <h3>JavaScript</h3>
+                </div>
+            </div>
+        </div>
+        <div class="skill-card" data-percentage="75">
+            <div class="card-inner">
+                <div class="card-front">
+                    <i class="fa-brands fa-python"></i>
+                    <h3>Python</h3>
+                    <p>Backend & Automation</p>
+                </div>
+                <div class="card-back">
+                    <div class="percentage-circle" style="--percentage: 75">
+                        <svg width="120" height="120">
+                            <circle class="circle-bg" cx="50" cy="50" r="45"></circle>
+                            <circle class="circle-progress" cx="50" cy="50" r="45"></circle>
+                        </svg>
+                        <div class="percentage-text">75%</div>
+                    </div>
+                    <h3>Python</h3>
+                </div>
+            </div>
+        </div>
+        <div class="skill-card" data-percentage="90">
+            <div class="card-inner">
+                <div class="card-front">
+                    <i class="fa-solid fa-users"></i>
+                    <h3>Teamfähigkeit</h3>
+                    <p>Zusammenarbeit & Kommunikation</p>
+                </div>
+                <div class="card-back">
+                    <div class="percentage-circle" style="--percentage: 90">
+                        <svg width="120" height="120">
+                            <circle class="circle-bg" cx="50" cy="50" r="45"></circle>
+                            <circle class="circle-progress" cx="50" cy="50" r="45"></circle>
+                        </svg>
+                        <div class="percentage-text">90%</div>
+                    </div>
+                    <h3>Teamfähigkeit</h3>
+                </div>
+                
+            </div>
+        </div>
+    </section>
+    <!-- ==================== Projekte Section ==================== -->
+    <section class="projekte" id="projekte">
+        <h2 class="heading">Meine <span>Projekte</span></h2>
+        
+        <div class="projekte-container">
+            <!-- Projekt 1 -->
+            <div class="projekt-box">
+                <img src="hero.jpg" alt="Projekt 1">
+                <div class="projekt-layer">
+                    <h4>Portfolio Website</h4>
+                    <p>Eine moderne Portfolio-Website mit responsivem Design, entwickelt mit HTML, CSS und JavaScript.</p>
+                    <div class="projekt-links">
+                        <a href="#"><i class="fa-solid fa-link"></i></a>
+                        <a href="#"><i class="fa-brands fa-github"></i></a>
+                    </div>
+                </div>
+            </div>
+            
+            <!-- Projekt 2 -->
+            <div class="projekt-box">
+                <img src="hero.jpg" alt="Projekt 2">
+                <div class="projekt-layer">
+                    <h4>To-Do App</h4>
+                    <p>Eine interaktive To-Do Liste mit lokaler Speicherung, erstellt mit JavaScript und modernem CSS.</p>
+                    <div class="projekt-links">
+                        <a href="#"><i class="fa-solid fa-link"></i></a>
+                        <a href="#"><i class="fa-brands fa-github"></i></a>
+                    </div>
+                </div>
+            </div>
+            
+            <!-- Projekt 3 -->
+            <div class="projekt-box">
+                <img src="hero.jpg" alt="Projekt 3">
+                <div class="projekt-layer">
+                    <h4>Python Automation</h4>
+                    <p>Automatisierungs-Scripts für wiederkehrende Aufgaben, entwickelt mit Python.</p>
+                    <div class="projekt-links">
+                        <a href="#"><i class="fa-solid fa-link"></i></a>
+                        <a href="#"><i class="fa-brands fa-github"></i></a>
+                    </div>
+                </div>
+            </div>
+            
+            <!-- Projekt 4 -->
+            <div class="projekt-box">
+                <img src="hero.jpg" alt="Projekt 4">
+                <div class="projekt-layer">
+                    <h4>Weather App</h4>
+                    <p>Eine Wetter-Anwendung mit API-Integration, die aktuelle Wetterdaten anzeigt.</p>
+                    <div class="projekt-links">
+                        <a href="#"><i class="fa-solid fa-link"></i></a>
+                        <a href="#"><i class="fa-brands fa-github"></i></a>
+                    </div>
+                </div>
+            </div>
+            
+            <!-- Projekt 5 -->
+            <div class="projekt-box">
+                <img src="hero.jpg" alt="Projekt 5">
+                <div class="projekt-layer">
+                    <h4>Restaurant Website</h4>
+                    <p>Eine elegante Restaurant-Website mit Menü, Reservierungssystem und Galerie.</p>
+                    <div class="projekt-links">
+                        <a href="#"><i class="fa-solid fa-link"></i></a>
+                        <a href="#"><i class="fa-brands fa-github"></i></a>
+                    </div>
+                </div>
+            </div>
+            
+            <!-- Projekt 6 -->
+            <div class="projekt-box">
+                <img src="hero.jpg" alt="Projekt 6">
+                <div class="projekt-layer">
+                    <h4>Quiz Game</h4>
+                    <p>Ein interaktives Quiz-Spiel mit verschiedenen Kategorien und Score-Tracking.</p>
+                    <div class="projekt-links">
+                        <a href="#"><i class="fa-solid fa-link"></i></a>
+                        <a href="#"><i class="fa-brands fa-github"></i></a>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+    <!-- ==================== Kontakt Section ==================== -->
+    <section class="kontakt" id="kontakt">
+        <h2 class="heading">Kontaktiere <span>Mich</span></h2>
+        
+        <div class="kontakt-container">
+            <div class="kontakt-info">
+                <h3>Lass uns zusammenarbeiten!</h3>
+                <p>Hast du ein spannendes Projekt oder eine Idee? Ich freue mich darauf, von dir zu hören!</p>
+                
+                <div class="info-items">
+                    <div class="info-item">
+                        <i class="fa-solid fa-envelope"></i>
+                        <div>
+                            <h4>Email</h4>
+                            <p>deine.email@example.com</p>
+                        </div>
+                    </div>
+                    
+                    <div class="info-item">
+                        <i class="fa-solid fa-phone"></i>
+                        <div>
+                            <h4>Telefon</h4>
+                            <p>+49 123 456789</p>
+                        </div>
+                    </div>
+                    
+                    <div class="info-item">
+                        <i class="fa-solid fa-location-dot"></i>
+                        <div>
+                            <h4>Standort</h4>
+                            <p>Bad-Neuenahr, Deutschland</p>
+                        </div>
+                    </div>
+                </div>
+                
+                <div class="kontakt-social">
+                    <a href="#"><i class="fa-brands fa-linkedin"></i></a>
+                    <a href="#"><i class="fa-brands fa-github"></i></a>
+                    <!-- <a href="#"><i class="fa-brands fa-x-twitter"></i></a>
+                    <a href="#"><i class="fa-brands fa-instagram"></i></a> -->
+                </div>
+            </div>
+
+             <div class="kontakt-form">
+                <form action="#">
+                    <div class="input-group">
+                        <div class="input-box">
+                            <input type="text" placeholder="Dein Name" required>
+                            <i class="fa-solid fa-user"></i>
+                        </div>
+                        
+                        <div class="input-box">
+                            <input type="email" placeholder="Deine Email" required>
+                            <i class="fa-solid fa-envelope"></i>
+                        </div>
+                    </div>
+                    
+                    <div class="input-group">
+                        <div class="input-box">
+                            <input type="tel" placeholder="Telefonnummer">
+                            <i class="fa-solid fa-phone"></i>
+                        </div>
+                        
+                        <div class="input-box">
+                            <input type="text" placeholder="Betreff">
+                            <i class="fa-solid fa-tag"></i>
+                        </div>
+                    </div>
+                    
+                    <div class="input-box textarea-box">
+                        <textarea placeholder="Deine Nachricht" rows="6" required></textarea>
+                        <i class="fa-solid fa-message"></i>
+                    </div>
+                    
+                    <button type="submit" class="btn">Nachricht senden</button>
+                </form>
+            </div> 
+        </div>
+    </section>
+    
+    <!-- ==================== Footer ==================== -->
+    <footer class="footer">
+        <div class="footer-content">
+            <p>&copy; 2026 Allen Klemm. Alle Rechte vorbehalten.</p>
+            <div class="footer-links">
+                <a href="#home">Nach oben</a>
+            </div>
+        </div>
+    </footer>
+<script>
+        // Prevent default link behavior
+        document.querySelectorAll('nav a').forEach(link => {
+            link.addEventListener('click', function(e) {
+                e.preventDefault();
+                const targetId = this.getAttribute('href');
+                const targetSection = document.querySelector(targetId);
+                
+                if (targetSection) {
+                    targetSection.scrollIntoView({ behavior: 'smooth' });
+                }
+            });
+        });
+        
+        // Für Touch-Geräte: Toggle beim Antippen
+        document.querySelectorAll('.skill-card').forEach(card => {
+            card.addEventListener('click', function() {
+                if (window.innerWidth <= 768) {
+                    this.classList.toggle('flipped');
+                }
+            });
+        });
+        
+        // Active Navigation beim Scrollen
+        const sections = document.querySelectorAll('section');
+        const navLinks = document.querySelectorAll('nav a');
+        
+        window.addEventListener('scroll', () => {
+            let current = '';
+            
+            sections.forEach(section => {
+                const sectionTop = section.offsetTop;
+                const sectionHeight = section.clientHeight;
+                
+                if (scrollY >= (sectionTop - 200)) {
+                    current = section.getAttribute('id');
+                }
+            });
+            
+            navLinks.forEach(link => {
+                link.classList.remove('active');
+                if (link.getAttribute('href').includes(current)) {
+                    link.classList.add('active');
+                }
+            });
+        });
+    </script>
+</body>
+</html>
+</body>
+</html>
