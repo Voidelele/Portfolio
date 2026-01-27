@@ -137,7 +137,7 @@ span{
 
 .home-img img{
     position: relative;
-    width: 32vw;
+    width: 22vw;
     border-radius: 50%;
     box-shadow: 0 0 25px solid #b74b4b;
     cursor: pointer;
@@ -273,7 +273,7 @@ span{
     }
 
     .home-img img{
-        width: 70vw;
+        width: 60vw;
         margin-top: 4rem;
     }
 }
@@ -694,6 +694,7 @@ span{
         font-size: 1.2rem;
     }
 }
+
 /* ==================== Kontakt Section ==================== */
 .kontakt {
     background-color: black;
@@ -701,21 +702,23 @@ span{
 
 .kontakt-container {
     display: grid;
-    grid-template-columns: 1fr 1fr;
-    gap: 5rem;
+    grid-template-columns: 1fr 1.2fr;
+    gap: 6rem;
     align-items: start;
+    max-width: 1400px;
+    margin: 0 auto;
 }
 
 .kontakt-info h3 {
-    font-size: 3rem;
+    font-size: 3.5rem;
     color: #b74b4b;
     margin-bottom: 1.5rem;
 }
 
-.kontakt-info p {
+.kontakt-info > p {
     font-size: 1.6rem;
     color: #ccc;
-    margin-bottom: 3rem;
+    margin-bottom: 4rem;
     line-height: 1.8;
 }
 
@@ -728,11 +731,11 @@ span{
 
 .info-item {
     display: flex;
-    align-items: center;
+    align-items: flex-start;
     gap: 2rem;
     background: linear-gradient(145deg, #1a1a1a, #0d0d0d);
-    padding: 2rem;
-    border-radius: 1rem;
+    padding: 2rem 2.5rem;
+    border-radius: 1.5rem;
     border: 2px solid #333;
     transition: 0.3s ease;
 }
@@ -744,36 +747,44 @@ span{
 }
 
 .info-item i {
-    font-size: 3rem;
+    font-size: 2.5rem;
     color: #b74b4b;
-    min-width: 3rem;
+    min-width: 2.5rem;
+    margin-top: 0.5rem;
+}
+
+.info-item div {
+    flex: 1;
 }
 
 .info-item h4 {
     font-size: 1.8rem;
-    margin-bottom: 0.5rem;
+    margin-bottom: 0.8rem;
+    color: white;
 }
 
 .info-item p {
-    font-size: 1.4rem;
+    font-size: 1.5rem;
     color: #999;
     margin: 0;
+    line-height: 1.5;
 }
 
 .kontakt-social {
     display: flex;
     gap: 1.5rem;
+    margin-top: 2rem;
 }
 
 .kontakt-social a {
     display: inline-flex;
     justify-content: center;
     align-items: center;
-    width: 4.5rem;
-    height: 4.5rem;
+    width: 5rem;
+    height: 5rem;
     background-color: transparent;
     border: 0.2rem solid #b74b4b;
-    font-size: 2rem;
+    font-size: 2.2rem;
     border-radius: 50%;
     color: #b74b4b;
     transition: 0.3s ease;
@@ -781,17 +792,23 @@ span{
 
 .kontakt-social a:hover {
     color: black;
-    transform: scale(1.3) translateY(-5px);
+    transform: scale(1.2) translateY(-5px);
     background-color: #b74b4b;
     box-shadow: 0 0 25px #b74b4b;
 }
 
+.kontakt-form {
+    background: linear-gradient(145deg, #1a1a1a, #0d0d0d);
+    padding: 4rem;
+    border-radius: 2rem;
+    border: 2px solid #333;
+}
 
- .kontakt-form form {
+.kontakt-form form {
     display: flex;
     flex-direction: column;
     gap: 2rem;
-} 
+}
 
 .input-group {
     display: grid;
@@ -809,11 +826,16 @@ span{
     padding: 1.5rem 4.5rem 1.5rem 1.5rem;
     font-size: 1.6rem;
     color: white;
-    background-color: #1a1a1a;
-    border: 2px solid #333;
+    background-color: #0d0d0d;
+    border: 2px solid #444;
     border-radius: 1rem;
     outline: none;
     transition: 0.3s ease;
+}
+
+.input-box input::placeholder,
+.textarea-box textarea::placeholder {
+    color: #666;
 }
 
 .input-box input:focus,
@@ -828,7 +850,7 @@ span{
     right: 1.5rem;
     top: 50%;
     transform: translateY(-50%);
-    font-size: 2rem;
+    font-size: 1.8rem;
     color: #b74b4b;
 }
 
@@ -844,12 +866,49 @@ span{
 
 .textarea-box textarea {
     resize: vertical;
-    min-height: 150px;
+    min-height: 180px;
 }
 
 .kontakt-form .btn {
     margin-top: 1rem;
     align-self: flex-start;
+    padding: 1.5rem 3.5rem;
+}
+
+/* Responsive für Kontakt */
+@media (max-width: 1200px) {
+    .kontakt-container {
+        gap: 4rem;
+    }
+}
+
+@media (max-width: 995px) {
+    .kontakt-container {
+        grid-template-columns: 1fr;
+        gap: 4rem;
+    }
+    
+    .kontakt-form {
+        padding: 3rem 2rem;
+    }
+    
+    .input-group {
+        grid-template-columns: 1fr;
+    }
+}
+
+@media (max-width: 600px) {
+    .kontakt-info h3 {
+        font-size: 2.5rem;
+    }
+    
+    .info-item {
+        padding: 2rem;
+    }
+    
+    .kontakt-form {
+        padding: 2.5rem 1.5rem;
+    }
 }
 
 
