@@ -605,7 +605,7 @@ span{
 
 .projekt-box:hover img {
     transform: scale(1.1);
-    filter: brightness(0.35);
+    filter: brightness(0.25);
 }
 
 .projekt-layer {
